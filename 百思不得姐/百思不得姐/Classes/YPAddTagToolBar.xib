@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1808" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="YPAddTagToolBar">
+            <rect key="frame" x="0.0" y="0.0" width="571" height="96"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="egL-vo-fPf" userLabel="顶部">
+                    <rect key="frame" x="5" y="0.0" width="561" height="51"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lqC-NI-O0r" userLabel="底部">
+                    <rect key="frame" x="0.0" y="61" width="571" height="35"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tabbar-light" translatesAutoresizingMaskIntoConstraints="NO" id="FBW-6d-n0b">
+                            <rect key="frame" x="0.0" y="0.0" width="571" height="35"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vX9-90-VT2" userLabel="@">
+                            <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="35" id="GlC-pn-XSw"/>
+                            </constraints>
+                            <state key="normal" image="post-@"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e8I-Xl-V8G" userLabel="#">
+                            <rect key="frame" x="35" y="0.0" width="35" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="35" id="pMO-Eh-aTS"/>
+                            </constraints>
+                            <state key="normal" image="post-#"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="e8I-Xl-V8G" firstAttribute="top" secondItem="lqC-NI-O0r" secondAttribute="top" id="1vE-8e-ZSt"/>
+                        <constraint firstItem="FBW-6d-n0b" firstAttribute="leading" secondItem="lqC-NI-O0r" secondAttribute="leading" id="35g-cR-LgY"/>
+                        <constraint firstAttribute="trailing" secondItem="FBW-6d-n0b" secondAttribute="trailing" id="3E5-Eb-z0D"/>
+                        <constraint firstItem="vX9-90-VT2" firstAttribute="leading" secondItem="lqC-NI-O0r" secondAttribute="leading" id="AIb-LO-S9K"/>
+                        <constraint firstItem="FBW-6d-n0b" firstAttribute="top" secondItem="lqC-NI-O0r" secondAttribute="top" id="DrN-4U-q7X"/>
+                        <constraint firstItem="e8I-Xl-V8G" firstAttribute="leading" secondItem="vX9-90-VT2" secondAttribute="trailing" id="EHf-ZK-em0"/>
+                        <constraint firstAttribute="height" constant="35" id="SIg-gG-tQS"/>
+                        <constraint firstItem="vX9-90-VT2" firstAttribute="top" secondItem="lqC-NI-O0r" secondAttribute="top" id="WSr-Wl-bnX"/>
+                        <constraint firstAttribute="bottom" secondItem="vX9-90-VT2" secondAttribute="bottom" id="ZVu-3D-Yax"/>
+                        <constraint firstAttribute="bottom" secondItem="e8I-Xl-V8G" secondAttribute="bottom" id="ihF-8t-DId"/>
+                        <constraint firstAttribute="bottom" secondItem="FBW-6d-n0b" secondAttribute="bottom" id="uTK-fT-cne"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="egL-vo-fPf" secondAttribute="trailing" constant="5" id="CNT-Lq-jYO"/>
+                <constraint firstItem="egL-vo-fPf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="Dlo-Ig-alm"/>
+                <constraint firstItem="lqC-NI-O0r" firstAttribute="top" secondItem="egL-vo-fPf" secondAttribute="bottom" constant="10" id="Gwb-1a-evk"/>
+                <constraint firstAttribute="bottom" secondItem="lqC-NI-O0r" secondAttribute="bottom" id="SFo-IL-W0W"/>
+                <constraint firstItem="lqC-NI-O0r" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="WiL-oU-rcq"/>
+                <constraint firstAttribute="trailing" secondItem="lqC-NI-O0r" secondAttribute="trailing" id="Wtd-Ib-P1T"/>
+                <constraint firstItem="egL-vo-fPf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="g6T-5m-Yhl"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="topView" destination="egL-vo-fPf" id="YVO-3V-D4b"/>
+            </connections>
+            <point key="canvasLocation" x="73.5" y="143"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="post-#" width="19" height="19"/>
+        <image name="post-@" width="19" height="19"/>
+        <image name="tabbar-light" width="320" height="49"/>
+    </resources>
+</document>

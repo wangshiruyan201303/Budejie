@@ -1,0 +1,34 @@
+//
+//  PrefixHeader.pch
+//  百思不得姐
+//
+//  Created by yupeng on 16/8/5.
+//  Copyright © 2016年 yupeng. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "UIView+YPExtension.h"
+#import "UIBarButtonItem+YPExtension.h"
+#import "YPConst.h"
+#import "NSDate+YPCategory.h"
+#import "UIImage+YPExtension.h"
+#import "UIImageView+YPExtension.h"
+
+#ifdef  DEBUG
+#define YPLog(...) NSLog(__VA_ARGS__)
+#else
+#define YPLog(...)
+#endif
+
+#define YPLogFunc YPLog(@"%s",__func__);
+
+#define YPRGBColor(r,g,b) [UIColor colorWithRed:(r)/250.0 green:(g)/250.0 blue:(g)/250.0 alpha:1.0]
+#define YPGlobalColor YPRGBColor(233,233,233)
+
+#define YPScreenW  [UIScreen mainScreen].bounds.size.width
+#define YPScreenH  [UIScreen mainScreen].bounds.size.height
+
+
+#endif /* PrefixHeader_pch */
